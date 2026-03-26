@@ -1,0 +1,17 @@
+{
+  "name": "llm-app-skeleton",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace @llm-app/api run dev",
+    "dev:web": "npm --workspace @llm-app/web run dev",
+    "build:api": "npm --workspace @llm-app/api run build",
+    "build:web": "npm --workspace @llm-app/web run build",
+    "build": "npm run build:api && npm run build:web"
+  },
+  "dependencies": {
+    "typescript": "^6.0.2"
+  }
+}
